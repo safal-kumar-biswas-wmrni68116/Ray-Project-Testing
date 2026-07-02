@@ -1,16 +1,7 @@
-import React from 'react';
+import React from "react";
+import { View } from "@ray-js/components";
+import styles from "./index.module.less";
 
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    console.info('app onLaunch');
-  }
-
-  componentDidMount() {
-    console.info('app did mount');
-  }
-
-  render() {
-    return this.props.children;
-  }
+export default function Home() {
+  return <View className={styles.view}>Hello World</View>;
 }
