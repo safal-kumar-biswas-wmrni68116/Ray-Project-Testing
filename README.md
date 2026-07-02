@@ -180,6 +180,35 @@ my-first-ray-app/
 
 ---
 
+## ⬇️ Setting Up a Pulled / Cloned Project
+
+After cloning or pulling the project on a new computer, only 2 commands are needed:
+
+```bash
+# Step 1 — Reinstall dependencies
+npm install
+
+# Step 2 — Build or run
+npm run build:tuya    # production build
+npm run start:tuya    # dev mode with hot reload
+```
+
+### Why only 2 commands?
+
+`node_modules/` is excluded from GitHub via `.gitignore` — it never gets pushed.
+Everything else (your code, config fixes, styles) is committed and comes with the repo.
+
+> **Golden rule:**
+> Anything you edit and commit → goes with the repo.
+> `node_modules/` → never goes, always reinstalled via `npm install`.
+
+### Do you need to redo the tsconfig / routes fixes?
+
+**No.** Those fixes are changes to actual project files (`tsconfig.json`, `routes.config.ts`).
+Anyone who pulls gets already-fixed versions automatically.
+
+---
+
 ## 📝 Notes
 
 <!-- Add your own notes below as you go -->
