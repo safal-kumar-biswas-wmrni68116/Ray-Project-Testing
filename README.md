@@ -185,10 +185,13 @@ my-first-ray-app/
 After cloning or pulling the project on a new computer, only 2 commands are needed:
 
 ```bash
-# Step 1 — Reinstall dependencies
+# Step 1 — Install Ray CLI globally
+npm install -g @ray-js/create-app
+
+# Step 2 — Reinstall dependencies
 npm install
 
-# Step 2 — Build or run
+# Step 3 — Build or run
 npm run build:tuya    # production build
 npm run start:tuya    # dev mode with hot reload
 ```
